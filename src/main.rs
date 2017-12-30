@@ -12,8 +12,8 @@ use urlencoded::UrlEncodedBody;
 fn main() {
     let mut router = Router::new();
 
-    router.get("/", get_root, "root");
-    router.post("/test", post_test, "test");
+    router.get("/rust", get_root, "rust");
+    router.post("/rust/test", post_test, "test");
 
     println!("Serving on http://localhost:3000...");
     Iron::new(router).http("localhost:3000").unwrap();
