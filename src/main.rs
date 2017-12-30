@@ -27,7 +27,7 @@ fn get_root(_request: &mut Request) -> IronResult<Response> {
     response.set_mut(r#"
         <title>Rust Web Server</title>
         Rust Web Server
-        <form action="/test" method="post">
+        <form action="/rust/test" method="post">
             <input type="text" name="input"/>
             <button type="submit">Submit</button>
         </form>
